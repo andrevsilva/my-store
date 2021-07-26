@@ -47,7 +47,7 @@ const changeQuantity = (productId, newQuantity) => {
     setCart(old => {
         const newCart = {}
         Object.keys(old).forEach((id) => {
-            const newProduct = {... old[id]}
+            const newProduct = {...old[id]}
             
             if(id === productId){
                 newProduct.quantity = newQuantity
