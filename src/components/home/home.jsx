@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Body = styled.div`
     background: rgb(8, 1, 42);
@@ -39,7 +40,7 @@ export default class Home extends React.Component{
         return(
             <Body>
                 <Title>My Store.</Title>
-                <Button>My Products</Button>
+                <Button><Link style={{textDecoration: "none" , color: "rgb(120,217,138)"}}to="/products">My Products</Link></Button>
             </Body>
         )
     }
